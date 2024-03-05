@@ -1,0 +1,79 @@
+@use "variables";
+
+// 이미지 기본 확장자 svg
+@mixin ratio_images($file, $type: 'svg', $sizes: cover, $position: 0 0, $color: '', $repeat: no-repeat ) {
+    $urls: $file + '.' + $type;
+    @if ($color == '') {
+        background: url($urls) $position $repeat;
+    }@else {
+        background: $color url($urls) $position $repeat;
+    }
+    background-size: $sizes;
+}
+
+@mixin ratio_images_change($file, $type: 'svg' ) {
+    $urls: $file + '.' + $type;
+    background-image: url($urls);
+}
+
+@mixin ellipsis($width) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: $width;
+}
+
+// 셀렉토 화면 분기
+
+// max-width 1700
+@mixin breakpoint_3Xl_Size {
+    @media (max-width: #{variables.$breakPoint3Xl}) {
+        @content
+    }
+}
+// max-width 1600
+@mixin breakpoint_2Xl_Size {
+    @media (max-width: #{variables.$breakPoint2Xl}) {
+        @content
+    }
+}
+// max-width 1400
+@mixin breakpoint_Xl_Size {
+    @media (max-width: #{variables.$breakPointXl}) {
+        @content
+    }
+}
+// max-width 1200
+@mixin breakpoint_Lg_Size {
+    @media (max-width: #{variables.$breakPointLg}) {
+        @content
+    }
+}
+// max-width 1024
+@mixin breakpoint_Size_MO {
+    @media (max-width: #{variables.$breakPoint}) {
+        @content
+    }
+}
+
+// min-width 1025~
+@mixin breakpoint_Size_PC {
+    @media (min-width: #{variables.$breakPoint + 1}) {
+        @content
+    }
+}
+
+// max-width 600
+@mixin breakpoint_Sm_Size {
+    @media (max-width: #{variables.$breakPointSm}) {
+        @content
+    }
+}
+
+// max-width 540
+@mixin breakpoint_Xs_Size {
+    @media (max-width: #{variables.$breakPointXs}) {
+        @content
+    }
+}
+

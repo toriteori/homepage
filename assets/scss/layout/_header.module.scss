@@ -1,0 +1,281 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.header-wrapper {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: variables.$colorWhite;
+    color: variables.$colorSpot;
+    transition: transform 0.5s ease;
+
+    &.scroll-down {
+        transform: translateY(-500px);
+    }
+
+    .header-inner {
+        position: relative;
+        z-index: 999;
+        height: 100%;
+        padding: 0 80px;
+        display: flex;
+        align-items: center;
+        background: variables.$colorWhite;
+
+        .logo {
+            width: 122px;
+
+            .btn-logo {
+                display: inline-block;
+            }
+        }
+
+        .gnb-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .gnb-inner {
+                .gnb-list {
+                    display: flex;
+                    width: 880px;
+
+                    .gnb-item {
+                        flex: 1;
+
+                        .link-gnb {
+                            display: inline-block;
+
+                            .text {
+                                display: inline-block;
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-box {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+
+            .btn-founded {
+                padding: 7px 24px;
+                border-radius: 20px;
+                background: variables.$colorSpot;
+                border: 1px solid transparent;
+                transition: 0.2s ease;
+
+                .text {
+                    display: inline-block;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: variables.$colorWhite;
+                }
+
+                &.active {
+                    border: 1px solid variables.$colorSpot;
+                    background: variables.$colorWhite;
+
+                    .text {
+                        color: variables.$colorSpot;
+                    }
+                }
+            }
+
+            .sns-list {
+                font-size: 0;
+                margin-left: 26px;
+
+                .sns-item {
+                    display: inline-block;
+
+                    ~ .sns-item {
+                        margin-left: 10px;
+                    }
+
+                    .link-sns {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .btn-main-menu {
+                .bugger-bar-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 30px;
+                    height: 22px;
+
+                    .bugger-bar {
+                        width: 100%;
+                        height: 3px;
+                        background: variables.$colorSpot;
+                    }
+                }
+            }
+        }
+    }
+
+    .sub-depth-wrap {
+        position: absolute;
+        z-index: 9;
+        top: -480px;
+        left: 0;
+        width: 100%;
+        height: 480px;
+        background: variables.$colorWhite;
+        transition: top 0.5s ease-in-out;
+
+        .sub-depth-inner {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 100px;
+            width: 880px;
+            margin: 0 auto;
+
+            .sub-depth-list {
+                flex: 1;
+
+                .sub-depth-item {
+
+                    ~ .sub-depth-item {
+                        margin-top: 35px;
+                    }
+
+                    .link-item {
+                        .text {
+                            display: inline-block;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.active {
+            top: 0;
+        }
+    }
+
+    @include mixins.breakpoint_2Xl_Size {
+        .header-inner {
+            padding: 0 40px;
+            .gnb-wrap {
+                .gnb-inner {
+                    .gnb-list {
+                        width: 668px;
+                    }
+                }
+            }
+        }
+
+        .sub-depth-wrap {
+            .sub-depth-inner {
+                width: 668px;
+            }
+        }
+    }
+
+
+    @include mixins.breakpoint_Xl_Size {
+        .header-inner {
+            .gnb-wrap {
+                .gnb-inner {
+                    .gnb-list {
+                        width: 568px;
+                        .gnb-item {
+                            .link-gnb {
+                                .text {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right-box {
+                .btn-founded {
+                    padding: 7px 16px;
+                    .text {
+                        font-size: 15px;
+                    }
+                }
+
+                .sns-list {
+                    margin-left: 15px;
+                    .sns-item {
+                        ~ .sns-item {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sub-depth-wrap {
+            .sub-depth-inner {
+                width: 568px;
+
+                .sub-depth-list {
+                    .sub-depth-item {
+                        .link-gnb {
+                            .text {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include mixins.breakpoint_Size_MO {
+        height: 80px;
+
+        .header-inner {
+            .logo {
+                width: 100px;
+            }
+
+            .gnb-wrap {
+                display: none;
+            }
+        }
+
+        .sub-depth-wrap {
+            display: none;
+        }
+    }
+
+    @include mixins.breakpoint_Xs_Size {
+        height: 55px;
+
+        .header-inner {
+            padding: 0 20px;
+
+            .logo {
+                width: 81px;
+            }
+
+            .right-box {
+                .btn-main-menu {
+                    .bugger-bar-wrap {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

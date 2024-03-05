@@ -1,0 +1,24 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+%iconComm {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.ico-arrow-orange {
+    @extend %iconComm;
+    @include mixins.ratio_images('../images/icon/ico_arrow_orange', 'png', contain, center);
+    width: 100%;
+    height: 48px;
+}
+
+.ico-to-top {
+    @extend %iconComm;
+    @include mixins.ratio_images('../images/icon/ico_arrow_orange', 'png', contain, center);
+    transform: rotate(270deg);
+    width: 20px;
+    height: 20px;
+}

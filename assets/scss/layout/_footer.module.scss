@@ -1,0 +1,169 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+.footer-wrapper {
+    position: relative;
+    width: 100%;
+    background: variables.$colorSpot;
+
+    .footer-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 0 65px;
+
+        .footer-sns-list {
+            font-size: 0;
+            margin-top: 40px;
+
+            .footer-sns-item {
+                display: inline-block;
+
+                ~ .footer-sns-item {
+                    margin-left: 72px;
+                }
+
+                .link-sns {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .footer-row {
+            margin-top: 40px;
+            text-align: center;
+
+            .footer-menu-list {
+                font-size: 0;
+
+                .footer-menu-item {
+                    display: inline-block;
+
+                    .text {
+                        color: variables.$colorWhite;
+                        font-weight: variables.$fontWeightMedium;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .footer-info-item {
+                position: relative;
+
+                .link-info {
+                    display: inline-block;
+                }
+
+                .text {
+                    font-size: 14px;
+                    font-weight: variables.$fontWeightLight;
+                    line-height: 26px;
+                    color: variables.$colorWhite;
+                }
+
+                .footer-info-bar {
+                    position: absolute;
+                    top: 7px;
+                    left: 0;
+                    width: 1px;
+                    height: 13px;
+                    opacity: 0.2;
+                    background: variables.$colorWhite;
+                }
+
+                ~ .footer-info-item {
+                    margin-left: 10px;
+                    padding-left: 10px;
+                }
+            }
+
+            .footer-info-list {
+                font-size: 0;
+
+                .footer-info-item {
+                    display: inline-block;
+                }
+            }
+
+            .footer-info-box {
+                .footer-info-item {
+                    ~ .footer-info-item {
+                        margin-left: 0;
+                        padding-left: 0;
+                    }
+                }
+            }
+
+        }
+
+        .footer-copy {
+            margin-top: 100px;
+
+            .text {
+                font-size: 12px;
+                line-height: 26px;
+                font-weight: variables.$fontWeightLight;
+                color: variables.$colorWhite;
+            }
+        }
+    }
+
+    @include mixins.breakpoint_Xs_Size {
+        .footer-inner {
+            padding: 24px 10px;
+
+            .footer-logo {
+                width: 120px;
+            }
+
+            .footer-sns-list {
+                margin-top: 24px;
+
+                .footer-sns-item {
+                    ~ .footer-sns-item {
+                        margin-left: 36px;
+                    }
+                }
+            }
+
+            .footer-row {
+                margin-top: 36px;
+
+                .footer-info-item {
+                    .text {
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            .footer-copy {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+// floating
+
+.floating-wrapper {
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 40px;
+
+    .btn-to-top {
+        opacity: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+        background: variables.$colorWhite;
+        transition: 0.5s ease;
+
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

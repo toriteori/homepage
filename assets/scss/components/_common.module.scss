@@ -1,0 +1,76 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+/* 웹 접근성을 위한 화면 텍스트 숨김 */
+%offscreen {
+    position: absolute !important;
+    display: block;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    font-size: 14px !important;
+}
+
+.offscreen, caption {
+    @extend %offscreen;
+}
+
+/* 버튼, 뱃지 */
+.btn-md {
+    display: inline-block;
+    font-size: 0;
+    padding: 12px 25px;
+    background: variables.$colorWhite;
+    border-radius: 30px;
+
+    .text {
+        display: inline-block;
+        font-size: 13px;
+        color: variables.$colorMyBlack;
+    }
+}
+
+.badge {
+    display: inline-block;
+    font-size: 0;
+    padding: 6px 8px;
+    border-radius: 25px;
+
+    .text {
+        display: inline-block;
+        font-size: 9px;
+        color: variables.$colorWhite;
+        font-weight: variables.$fontWeightLight;
+    }
+
+    &.gray {
+        background: #A3A3A3;
+    }
+}
+
+/* swiper */
+%swiperCommon {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-auto-wrap {
+    @extend %swiperCommon;
+}
+
+/* 마이홈페이지 폰트 색상 */
+
+.fc-yellow {
+    color: #FFB84F !important;
+}
+
+.fc-sky-blue {
+    color: #90C3CD !important;
+}
+
+.fc-green {
+    color: #47B171 !important;
+}
+
+

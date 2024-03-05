@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Vendors CSS
+   ================================================== -->
+    <link rel="stylesheet" href="../assets/vendors/jquery-ui-1.13.2/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/vendors/swiper@10/swiper-bundle.css">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/portfolio_front.css">
+
+    <!-- Vendors Javascript
+    ================================================== -->
+    <script src="../assets/vendors/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="../assets/vendors/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../assets/vendors/touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script src="../assets/vendors/gsap-3.12.0/gsap.min.js"></script>
+    <script src="../assets/vendors/gsap-3.12.0/ScrollTrigger.min.js"></script>
+    <script src="../assets/vendors/lottie-5.12.2/lottie.min.js"></script>
+    <script src="../assets/vendors/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../assets/vendors/scrollpos-styler/scrollPosStyler.min.js"></script>
+    <script src="../assets/vendors/css-element-queries/ResizeSensor.js"></script>
+
+    <!-- UI JavaScript
+    ================================================== -->
+    <script src="../assets/js/portfolio.js"></script>
+
+
+    <title>SELECTO COFFEE</title>
+</head>
+<body>
+    <div id="cursor"></div>
+    <div class="wrapper">
+        <div class="header-wrapper">
+            <div class="header-inner">
+                <h1 class="logo">
+                    <a href="javascript:" class="btn-logo"><img src="../assets/images/main/selecto_logo.png" alt="selecto my coffee, our table"></a>
+                </h1>
+                <!-- gnb-wrap -->
+                <div class="gnb-wrap">
+                    <!-- gnb-inner -->
+                    <div class="gnb-inner">
+                        <!-- gnb-list -->
+                        <ul class="gnb-list">
+                            <li class="gnb-item">
+                                <a href="javascript:" class="link-gnb"><span class="text">셀렉토 커피</span></a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="link-gnb"><span class="text">메뉴</span></a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="link-gnb"><span class="text">매장안내</span></a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="javascript:" class="link-gnb"><span class="text">WHAT'S NEW</span></a>
+                            </li>
+                        </ul>
+                        <!-- // gnb-list -->
+                    </div>
+                    <!-- // gnb-inner -->
+                </div>
+                <!-- // gnb-wrap -->
+
+                <!-- right-box -->
+                <div class="right-box">
+                    <a href="javascript:" class="btn-founded" show-pc><span class="text">창업안내</span></a>
+                    <ul class="sns-list" show-pc>
+                        <li class="sns-item">
+                            <a href="javascript:" class="link-sns" target="_blank"><img src="../assets/images/icon/ico_naver_blog.svg" alt="네이버 블로그"></a>
+                        </li>
+                        <li class="sns-item">
+                            <a href="javascript:" class="link-sns" target="_blank"><img src="../assets/images/icon/ico_youtube.svg" alt="유튜브"></a>
+                        </li>
+                        <li class="sns-item">
+                            <a href="javascript:" class="link-sns" target="_blank"><img src="../assets/images/icon/ico_insta.svg" alt="인스타그램"></a>
+                        </li>
+                    </ul>
+                    <button class="btn-main-menu" show-mo>
+                        <span class="bugger-bar-wrap">
+                            <span class="bugger-bar"></span>
+                            <span class="bugger-bar"></span>
+                            <span class="bugger-bar"></span>
+                        </span>
+                    </button>
+                </div>
+                <!-- // right-box -->
+            </div>
+            <!-- // header-inner -->
+            <!-- sub-depth-wrap -->
+            <div class="sub-depth-wrap">
+                <!-- sub-depth-inner -->
+                <div class="sub-depth-inner">
+                    <!-- sub-depth-list -->
+                    <ul class="sub-depth-list">
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">브랜드 스토리</span>
+                            </a>
+                        </li>
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">HISTORY</span>
+                            </a>
+                        </li>
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">경쟁력</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- // sub-depth-list -->
+                    <!-- sub-depth-list -->
+                    <ul class="sub-depth-list">
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">Signature</span>
+                            </a>
+                        </li>
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">Coffee</span>
+                            </a>
+                        </li>
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">Cookies</span>
+                            </a>
+                        </li>
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">Beverage</span>
+                            </a>
+                        </li>
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">Deli&Dessert</span>
+                            </a>
+                        </li>
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">MD</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- // sub-depth-list -->
+                    <!-- sub-depth-list -->
+                    <ul class="sub-depth-list">
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">매장찾기</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- // sub-depth-list -->
+                    <!-- sub-depth-list -->
+                    <ul class="sub-depth-list">
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">새로운 소식</span>
+                            </a>
+                        </li>
+                        <li class="sub-depth-item">
+                            <a href="javascript:" class="link-item">
+                                <span class="text">보도자료</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- // sub-depth-list -->
+                </div>
+                <!-- // sub-depth-inner -->
+            </div>
+            <!-- // sub-depth-wrap -->
+        </div>
+        <!-- // header-wrapper -->
+
+        <div class="container-wrapper">
+            <div class="content-wrapper">
+                <div class="content-wrap">
+                    <div class="visual-section">
+                        <!-- visual-swiper-wrap -->
+                        <div class="visual-swiper-wrap">
+                            <div class="fraction-swiper-wrap loop autoplay">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="thumb-box" show-pc>
+                                            <img src="../assets/images/main/main_visual_01.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-box" show-mo>
+                                            <img src="../assets/images/main/main_visual_mo_01.jpg" alt="">
+                                        </div>
+                                        <a href="javascript:" class="btn-link"></a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="thumb-box" show-pc>
+                                            <img src="../assets/images/main/main_visual_02.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-box" show-mo>
+                                            <img src="../assets/images/main/main_visual_mo_02.jpg" alt="">
+                                        </div>
+                                        <a href="javascript:" class="btn-link"></a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="thumb-box" show-pc>
+                                            <img src="../assets/images/main/main_visual_03.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-box" show-mo>
+                                            <img src="../assets/images/main/main_visual_mo_03.jpg" alt="">
+                                        </div>
+                                        <a href="javascript:" class="btn-link"></a>
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <!-- // visual-swiper-wrap -->
+                    </div>
+                    <!-- // visual-section -->
+                    <div class="menu-section">
+                        <div class="bg-tab-wrap">
+                            <!-- flex-area -->
+                            <div class="flex-area">
+                                <!-- bg-change-box -->
+                                <div class="bg-change-box">
+                                    <div class="content-title">SELECTO MENU</div>
+                                    <!-- tabs -->
+                                    <div class="tabs">
+                                        <ul class="tab-list">
+                                            <li class="tab-item active">
+                                                <button type="button" class="btn-tab"><span class="text">SIGNATURE</span></button>
+                                            </li>
+                                            <li class="tab-item">
+                                                <button type="button" class="btn-tab"><span class="text">BEVERAGE</span></button>
+                                            </li>
+                                            <li class="tab-item">
+                                                <button type="button" class="btn-tab"><span class="text">COFFEE</span></button>
+                                            </li>
+                                            <li class="tab-item">
+                                                <button type="button" class="btn-tab"><span class="text">COOKIE</span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- // tabs -->
+                                </div>
+                                <!-- // bg-change-box -->
+                                <!-- bg-visual-wrap -->
+                                <div class="bg-visual-wrap">
+                                    <!-- bg-visual-list -->
+                                    <ul class="bg-visual-list">
+                                        <li class="bg-visual-item">
+                                            <img src="../assets/images/main/visual_bg_01.jpg" alt="">
+                                        </li>
+                                        <li class="bg-visual-item">
+                                            <img src="../assets/images/main/visual_bg_02.jpg" alt="">
+                                        </li>
+                                        <li class="bg-visual-item">
+                                            <img src="../assets/images/main/visual_bg_03.png" alt="">
+                                        </li>
+                                        <li class="bg-visual-item">
+                                            <img src="../assets/images/main/visual_bg_04.png" alt="">
+                                        </li>
+                                    </ul>
+                                    <!-- // bg-visual-list -->
+                                </div>
+                                <!-- // bg-visual-wrap -->
+                            </div>
+                            <!-- // flex-area -->
+                            <!-- flex-area -->
+                            <div class="flex-area">
+                                <!-- tab-content -->
+                                <div class="tab-content">
+                                    <!-- menu-category-wrap -->
+                                    <div class="menu-category-wrap">
+                                        <!-- content-title-wrap -->
+                                        <div class="content-title-wrap">
+                                            <div class="content-title">SIGNATURE</div>
+                                            <div class="title-desc">셀렉토 감성과 재미를 듬뿍 담아 낸, 셀렉토에서<br>맛볼 수 있는 시그니처 음료</div>
+                                        </div>
+                                        <!-- // content-title-wrap -->
+                                        <!-- menu-center-wrap -->
+                                        <div class="menu-center-wrap">
+                                            <img src="../assets/images/main/visual_item_01.png" alt="">
+                                        </div>
+                                        <!-- // menu-center-wrap -->
+                                        <!-- menu-visual-wrap -->
+                                        <div class="menu-visual-wrap">
+                                            <!-- auto-swiper-wrap  -->
+                                            <div class="auto-swiper-wrap">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- // auto-swiper-wrap  -->
+                                        </div>
+                                        <!-- // menu-visual-wrap -->
+                                        <!-- menu-topping-wrap -->
+                                        <div class="menu-topping-wrap">
+                                            <div class="content-title">추천 토핑류</div>
+                                            <!-- topping-list -->
+                                            <ul class="topping-list">
+                                                <li class="topping-item">
+                                                    <!-- thumb-box -->
+                                                    <div class="thumb-box">
+                                                        <img src="../assets/images/temp/temp_topping_item.png" alt="임시 이미지">
+                                                    </div>
+                                                    <!-- // thumb-box -->
+                                                    <span class="text">시럽_바닐라빈</span>
+                                                </li>
+                                                <li class="topping-item">
+                                                    <!-- thumb-box -->
+                                                    <div class="thumb-box">
+                                                        <img src="../assets/images/temp/temp_topping_item.png" alt="임시 이미지">
+                                                    </div>
+                                                    <!-- // thumb-box -->
+                                                    <span class="text">시럽_바닐라빈</span>
+                                                </li>
+                                            </ul>
+                                            <!-- // topping-list -->
+                                        </div>
+                                        <!-- // menu-topping-wrap -->
+                                    </div>
+                                    <!-- // menu-category-wrap -->
+                                </div>
+                                <!-- // tab-content -->
+
+                                <!-- tab-content -->
+                                <div class="tab-content">
+                                    <!-- menu-category-wrap -->
+                                    <div class="menu-category-wrap">
+                                        <!-- content-title-wrap -->
+                                        <div class="content-title-wrap">
+                                            <div class="content-title">BEVERAGE</div>
+                                            <div class="title-desc">고객의 라이프 스타일에 맞춰 더욱 다양하게 즐길<br>수 있는 셀렉토의 음료 라인업!</div>
+                                        </div>
+                                        <!-- // content-title-wrap -->
+                                        <!-- menu-center-wrap -->
+                                        <div class="menu-center-wrap">
+                                            <img src="../assets/images/main/visual_item_02.png" alt="">
+                                        </div>
+                                        <!-- // menu-center-wrap -->
+                                        <!-- menu-visual-wrap -->
+                                        <div class="menu-visual-wrap">
+                                            <!-- auto-swiper-wrap  -->
+                                            <div class="auto-swiper-wrap">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item_02.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item_02.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item_02.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- // auto-swiper-wrap  -->
+                                        </div>
+                                        <!-- // menu-visual-wrap -->
+                                        <!-- menu-topping-wrap -->
+                                        <div class="menu-topping-wrap">
+                                            <div class="content-title">추천 토핑류</div>
+                                            <!-- topping-list -->
+                                            <ul class="topping-list">
+                                                <li class="topping-item">
+                                                    <!-- thumb-box -->
+                                                    <div class="thumb-box">
+                                                        <img src="../assets/images/temp/temp_topping_item.png" alt="임시 이미지">
+                                                    </div>
+                                                    <!-- // thumb-box -->
+                                                    <span class="text">시럽_바닐라빈</span>
+                                                </li>
+                                                <li class="topping-item">
+                                                    <!-- thumb-box -->
+                                                    <div class="thumb-box">
+                                                        <img src="../assets/images/temp/temp_topping_item.png" alt="임시 이미지">
+                                                    </div>
+                                                    <!-- // thumb-box -->
+                                                    <span class="text">시럽_바닐라빈</span>
+                                                </li>
+                                            </ul>
+                                            <!-- // topping-list -->
+                                        </div>
+                                        <!-- // menu-topping-wrap -->
+                                    </div>
+                                    <!-- // menu-category-wrap -->
+                                </div>
+                                <!-- // tab-content -->
+
+                                <!-- tab-content -->
+                                <div class="tab-content">
+                                    <!-- menu-category-wrap -->
+                                    <div class="menu-category-wrap">
+                                        <!-- content-title-wrap -->
+                                        <div class="content-title-wrap">
+                                            <div class="content-title">COFFEE</div>
+                                            <div class="title-desc">셀렉토는 품질 좋은 원두를 선별해, 최적의 로스팅 포인트로<br>더욱 섬세하게 균형잡힌 풍미의 커피를 고객에게 선사합니다.</div>
+                                        </div>
+                                        <!-- // content-title-wrap -->
+                                        <!-- menu-center-wrap -->
+                                        <div class="menu-center-wrap">
+                                            <img src="../assets/images/main/visual_item_03.png" alt="">
+                                        </div>
+                                        <!-- // menu-center-wrap -->
+                                        <!-- menu-visual-wrap -->
+                                        <div class="menu-visual-wrap">
+                                            <!-- auto-swiper-wrap  -->
+                                            <div class="auto-swiper-wrap">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item_03.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item_03.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item_03.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- // auto-swiper-wrap  -->
+                                        </div>
+                                        <!-- // menu-visual-wrap -->
+                                        <!-- menu-topping-wrap -->
+                                        <div class="menu-topping-wrap">
+                                            <div class="content-title">추천 토핑류</div>
+                                            <!-- topping-list -->
+                                            <ul class="topping-list">
+                                                <li class="topping-item">
+                                                    <!-- thumb-box -->
+                                                    <div class="thumb-box">
+                                                        <img src="../assets/images/temp/temp_topping_item.png" alt="임시 이미지">
+                                                    </div>
+                                                    <!-- // thumb-box -->
+                                                    <span class="text">시럽_바닐라빈</span>
+                                                </li>
+                                                <li class="topping-item">
+                                                    <!-- thumb-box -->
+                                                    <div class="thumb-box">
+                                                        <img src="../assets/images/temp/temp_topping_item.png" alt="임시 이미지">
+                                                    </div>
+                                                    <!-- // thumb-box -->
+                                                    <span class="text">시럽_바닐라빈</span>
+                                                </li>
+                                            </ul>
+                                            <!-- // topping-list -->
+                                        </div>
+                                        <!-- // menu-topping-wrap -->
+                                    </div>
+                                    <!-- // menu-category-wrap -->
+                                </div>
+                                <!-- // tab-content -->
+
+                                <!-- tab-content -->
+                                <div class="tab-content">
+                                    <!-- menu-category-wrap -->
+                                    <div class="menu-category-wrap">
+                                        <!-- content-title-wrap -->
+                                        <div class="content-title-wrap">
+                                            <div class="content-title">COOKIE</div>
+                                            <div class="title-desc">남녀노소, 어디서나 맛있게! 셀렉토 시그니처 수제 쿠키</div>
+                                        </div>
+                                        <!-- // content-title-wrap -->
+                                        <!-- menu-center-wrap -->
+                                        <div class="menu-center-wrap">
+                                            <img src="../assets/images/main/visual_item_04.png" alt="">
+                                        </div>
+                                        <!-- // menu-center-wrap -->
+                                        <!-- menu-visual-wrap -->
+                                        <div class="menu-visual-wrap">
+                                            <!-- auto-swiper-wrap  -->
+                                            <div class="auto-swiper-wrap">
+                                                <ul class="swiper-wrapper">
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item_04.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item_04.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                    <li class="swiper-slide">
+                                                        <!-- thumb-box -->
+                                                        <div class="thumb-box">
+                                                            <img src="../assets/images/temp/temp_menu_item_04.png" alt="임시 이미지">
+                                                        </div>
+                                                        <!-- // thumb-box -->
+                                                        <a href="javascript:" class="btn-link"><span class="offscreen">메뉴 바로가기</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- // auto-swiper-wrap  -->
+                                        </div>
+                                        <!-- // menu-visual-wrap -->
+                                        <!-- menu-topping-wrap -->
+                                        <div class="menu-topping-wrap">
+                                            <div class="content-title">추천 토핑류</div>
+                                            <!-- topping-list -->
+                                            <ul class="topping-list">
+                                                <li class="topping-item">
+                                                    <!-- thumb-box -->
+                                                    <div class="thumb-box">
+                                                        <img src="../assets/images/temp/temp_topping_item.png" alt="임시 이미지">
+                                                    </div>
+                                                    <!-- // thumb-box -->
+                                                    <span class="text">시럽_바닐라빈</span>
+                                                </li>
+                                                <li class="topping-item">
+                                                    <!-- thumb-box -->
+                                                    <div class="thumb-box">
+                                                        <img src="../assets/images/temp/temp_topping_item.png" alt="임시 이미지">
+                                                    </div>
+                                                    <!-- // thumb-box -->
+                                                    <span class="text">시럽_바닐라빈</span>
+                                                </li>
+                                            </ul>
+                                            <!-- // topping-list -->
+                                        </div>
+                                        <!-- // menu-topping-wrap -->
+                                    </div>
+                                    <!-- // menu-category-wrap -->
+                                </div>
+                                <!-- // tab-content -->
+                            </div>
+                            <!-- // flex-area -->
+                        </div>
+                        <!-- // bg-tab-wrap -->
+                    </div>
+                    <!-- // menu-section -->
+                    <div class="identity-section">
+                        <!-- identity-slogan-wrap -->
+                        <div class="identity-slogan-wrap">
+                            <!-- thumb-box -->
+                            <div class="thumb-box">
+                                <img src="../assets/images/main/identity_slogan.svg" alt="my coffee, out table.">
+                            </div>
+                            <!-- thumb-box -->
+                        </div>
+                        <!-- // identity-slogan-wrap -->
+                        <!-- identity-bg-wrap -->
+                        <div class="identity-bg-wrap">
+                            <!-- thumb-box -->
+                            <div class="thumb-box">
+                                <img src="../assets/images/main/identity_bg.jpg" alt="">
+                            </div>
+                            <!-- thumb-box -->
+                        </div>
+                        <!-- // identity-bg-wrap -->
+                        <!-- identity-marguee-wrap -->
+                        <div class="identity-marquee-wrap">
+                            <!-- marquee-wrap -->
+                            <div class="marquee-wrap">
+                                <!-- marquee-box -->
+                                <div class="marquee-box">
+                                    <!-- original-marquee -->
+                                    <div class="original-marquee">
+                                        <span class="text">매장에서 직접 구워 맛있는 셀렉토 쿠키</span>
+                                    </div>
+                                    <!-- // original-marquee -->
+                                </div>
+                                <!-- // marquee-box -->
+                            </div>
+                            <!-- // marquee-wrap -->
+                        </div>
+                        <!-- // identity-marguee-wrap -->
+                    </div>
+                    <!-- // identity-section -->
+                    <div class="news-events-section">
+                        <!-- news-events-wrap -->
+                        <div class="new-event-wrap">
+                            <!-- flex-area -->
+                            <div class="flex-area">
+                                <!-- content-title-wrap -->
+                                <div class="content-title-wrap">
+                                    <div class="content-title">NEWS &<br>EVENTS</div>
+                                </div>
+                                <!-- // content-title-wrap -->
+                                <!-- circle-text-box -->
+                                <div class="circle-text-box active">
+                                    <img src="../assets/images/icon/circle_text_orange.png" alt="selecto coffee">
+                                    <a href="javascript:" class="btn-enter-link">
+                                        <span class="ico-arrow-orange"><span class="offscreen">뉴스 이벤트 상세바로가기</span></span>
+                                    </a>
+                                </div>
+                                <!-- // circle-text-box -->
+                            </div>
+                            <!-- // flex-area -->
+                            <!-- flex-area -->
+                            <div class="flex-area">
+                                <!-- news-events-list -->
+                                <ul class="news-events-list">
+                                    <!-- news-events-item -->
+                                    <li class="news-events-item">
+                                        <!-- link-info -->
+                                        <a href="javascript:" class="link-info">
+                                            <!-- info-box -->
+                                            <div class="info-box">
+                                                <!-- info-title-wrap -->
+                                                <div class="info-title-wrap">
+                                                    <span class="sub-title">EVENT</span>
+                                                    <span class="title">[NEW MENU] 묵직한 달콤함, 셀렉토 아메리칸 쿠키</span>
+                                                </div>
+                                                <!-- // info-title-wrap -->
+                                                <span class="date">2023/11/16 ~ 2099/12/31</span>
+                                            </div>
+                                            <!-- // info-box -->
+                                            <!-- right-box -->
+                                            <div class="right-box">
+                                                <span class="ico-arrow-orange"><span class="offscreen">뉴스이벤트 상세 바로가기</span></span>
+                                            </div>
+                                            <!-- right-box -->
+                                        </a>
+                                        <!-- // link-info -->
+                                    </li>
+                                    <!-- // news-events-item -->
+                                    <!-- news-events-item -->
+                                    <li class="news-events-item">
+                                        <!-- link-info -->
+                                        <a href="javascript:" class="link-info">
+                                            <!-- info-box -->
+                                            <div class="info-box">
+                                                <!-- info-title-wrap -->
+                                                <div class="info-title-wrap">
+                                                    <span class="sub-title">EVENT</span>
+                                                    <span class="title">[NEW MENU] 묵직한 달콤함, 셀렉토 아메리칸 쿠키</span>
+                                                </div>
+                                                <!-- // info-title-wrap -->
+                                                <span class="date">2023/11/16 ~ 2099/12/31</span>
+                                            </div>
+                                            <!-- // info-box -->
+                                            <!-- right-box -->
+                                            <div class="right-box">
+                                                <span class="ico-arrow-orange"><span class="offscreen">뉴스이벤트 상세 바로가기</span></span>
+                                            </div>
+                                            <!-- right-box -->
+                                        </a>
+                                        <!-- // link-info -->
+                                    </li>
+                                    <!-- // news-events-item -->
+                                    <!-- news-events-item -->
+                                    <li class="news-events-item">
+                                        <!-- link-info -->
+                                        <a href="javascript:" class="link-info">
+                                            <!-- info-box -->
+                                            <div class="info-box">
+                                                <!-- info-title-wrap -->
+                                                <div class="info-title-wrap">
+                                                    <span class="sub-title">EVENT</span>
+                                                    <span class="title">[NEW MENU] 묵직한 달콤함, 셀렉토 아메리칸 쿠키</span>
+                                                </div>
+                                                <!-- // info-title-wrap -->
+                                                <span class="date">2023/11/16 ~ 2099/12/31</span>
+                                            </div>
+                                            <!-- // info-box -->
+                                            <!-- right-box -->
+                                            <div class="right-box">
+                                                <span class="ico-arrow-orange"><span class="offscreen">뉴스이벤트 상세 바로가기</span></span>
+                                            </div>
+                                            <!-- right-box -->
+                                        </a>
+                                        <!-- // link-info -->
+                                    </li>
+                                    <!-- // news-events-item -->
+                                </ul>
+                                <!-- // news-events-list -->
+                            </div>
+                            <!-- // flex-area -->
+                        </div>
+                        <!-- // news-events-wrap -->
+                    </div>
+                    <!-- // news-events-section -->
+                    <div class="sns-section">
+                        <div class="content-title-wrap">
+                            <div class="content-title">selecto_coffee</div>
+                        </div>
+                        <!-- sns-insta-wrap -->
+                        <div class="sns-insta-wrap">
+                            <!-- insta-list -->
+                            <ul class="insta-list">
+                                <li class="insta-item">
+                                    <div class="thumb-box">
+                                        <img src="../assets/images/temp/temp_sns_01.jpg" alt="임시 이미지">
+                                    </div>
+                                    <a href="javascript:" class="btn-link"><span class="offscreen">인스타그램 바로가기</span></a>
+                                </li>
+                                <li class="insta-item">
+                                    <div class="thumb-box">
+                                        <img src="../assets/images/temp/temp_sns_02.jpg" alt="임시 이미지">
+                                    </div>
+                                    <a href="javascript:" class="btn-link"><span class="offscreen">인스타그램 바로가기</span></a>
+                                </li>
+                                <li class="insta-item">
+                                    <div class="thumb-box">
+                                        <img src="../assets/images/temp/temp_sns_03.jpg" alt="임시 이미지">
+                                    </div>
+                                    <a href="javascript:" class="btn-link"><span class="offscreen">인스타그램 바로가기</span></a>
+                                </li>
+                            </ul>
+                            <!-- // insta-list -->
+                        </div>
+                        <!-- // sns-insta-wrap -->
+                    </div>
+                    <!-- // sns-section -->
+                </div>
+                <!-- // content-wrap -->
+            </div>
+            <!-- // content-wrapper -->
+        </div>
+        <!-- // container-wrapper -->
+
+        <div class="floating-wrapper">
+            <button type="button" class="btn-to-top"><span class="ico-to-top"><span class="offscreen">최상위 화면으로</span></span></button>
+        </div>
+        <!-- // floating-wrapper -->
+
+        <div class="footer-wrapper">
+            <div class="footer-inner">
+                <!-- footer-logo -->
+                <div class="footer-logo">
+                    <img src="../assets/images/main/selecto_logo_white.svg" alt="selecto my coffee, our table">
+                </div>
+                <!-- // footer-logo -->
+                <!-- footer-sns-list -->
+                <ul class="footer-sns-list">
+                    <li class="footer-sns-item">
+                        <a href="javascript:" class="link-sns" target="_blank">
+                            <img src="../assets/images/icon/ico_footer_naver_blog.svg" alt="네이버 블로그">
+                        </a>
+                    </li>
+                    <li class="footer-sns-item">
+                        <a href="javascript:" class="link-sns" target="_blank">
+                            <img src="../assets/images/icon/ico_footer_insta.svg" alt="인스타그램">
+                        </a>
+                    </li>
+                    <li class="footer-sns-item">
+                        <a href="javascript:" class="link-sns" target="_blank">
+                            <img src="../assets/images/icon/ico_footer_youtube.svg" alt="유튜브">
+                        </a>
+                    </li>
+                </ul>
+                <!-- // footer-sns-list -->
+                <!-- footer-row -->
+                <div class="footer-row">
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-item">
+                            <a href="javascript:" class="link-menu"><span class="text">개인정보취급방침</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // footer-row -->
+                <!-- footer-row -->
+                <div class="footer-row" show-pc>
+                    <ul class="footer-info-list">
+                        <li class="footer-info-item">
+                            <span class="text">주소 : 서울시 구로구 구로3동 222-14 에이스하이엔드타워 2차 1402호</span>
+                        </li>
+                        <li class="footer-info-item">
+                            <span class="footer-info-bar"></span>
+                            <span class="text">도로명주소 : 서울시 구로구 디지털로26길 61 에이스하이엔드타워 2차 1402호</span>
+                        </li>
+                    </ul>
+                    <ul class="footer-info-list">
+                        <li class="footer-info-item">
+                            <span class="text">대표이사 : 황규연</span>
+                        </li>
+                        <li class="footer-info-item">
+                            <span class="footer-info-bar"></span>
+                            <span class="text">사업자등록번호 : 109-81-99153</span>
+                        </li>
+                        <li class="footer-info-item">
+                            <span class="footer-info-bar"></span>
+                            <a href="tel:1600-5649" class="link-info"><span class="text">전화 : 1600-5649</span></a>
+                        </li>
+                        <li class="footer-info-item">
+                            <span class="footer-info-bar"></span>
+                            <span class="text">팩스 : 02-6340-1701</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // footer-row -->
+
+                <!-- footer-row -->
+                <div class="footer-row" show-mo>
+                    <div class="footer-info-box">
+                        <div class="footer-info-item">
+                            <span class="text">주소 : 서울시 구로구 구로3동 222-14 에이스하이엔드타워 2차 1402호</span>
+                        </div>
+                        <div class="footer-info-item">
+                            <span class="text">도로명주소 : 서울시 구로구 디지털로26길 61 에이스하이엔드타워 2차 1402호</span>
+                        </div>
+                    </div>
+                    <ul class="footer-info-list">
+                        <li class="footer-info-item">
+                            <span class="text">대표이사 : 황규연</span>
+                        </li>
+                        <li class="footer-info-item">
+                            <span class="footer-info-bar"></span>
+                            <span class="text">사업자등록번호 : 109-81-99153</span>
+                        </li>
+                    </ul>
+                    <ul class="footer-info-list">
+                        <li class="footer-info-item">
+                            <span class="footer-info-bar"></span>
+                            <a href="tel:1600-5649" class="link-info"><span class="text">전화 : 1600-5649</span></a>
+                        </li>
+                        <li class="footer-info-item">
+                            <span class="footer-info-bar"></span>
+                            <span class="text">팩스 : 02-6340-1701</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // footer-row -->
+
+                <!-- footer-copy -->
+                <div class="footer-copy">
+                    <span class="text">COPYRIGHT ㈜맥스원이링크 ALL RIGHTS RESERVED.</span>
+                </div>
+                <!-- // footer-copy -->
+            </div>
+        </div>
+        <!-- // footer-wrapper -->
+    </div>
+</body>
+</html>
