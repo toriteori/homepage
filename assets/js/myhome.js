@@ -101,7 +101,7 @@ function subText () {
         })
             .fromTo(selector,{opacity: 0, y: 50 }, {opacity: 1, y: 0, ease: 'none', duration: 5}, 0)
     })
-}git
+}
 
 function animationText () {
     let textList = document.querySelectorAll('.animation-list .animation-item');
