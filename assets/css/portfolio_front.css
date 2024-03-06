@@ -2,7 +2,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
 /* 기본 컬러 */
 /* 마이홈페이지 컬러 */
-/*$fontEngDefault: "linotype-didot", serif !important;*/
 /* 화면분기 셀렉토 */
 /*  reset */
 html, body, div, span, applet, object, iframe,
@@ -78,7 +77,6 @@ strong {
 
 /* 기본 컬러 */
 /* 마이홈페이지 컬러 */
-/*$fontEngDefault: "linotype-didot", serif !important;*/
 /* 화면분기 셀렉토 */
 .header-wrapper {
   width: 100%;
@@ -280,7 +278,6 @@ strong {
 
 /* 기본 컬러 */
 /* 마이홈페이지 컬러 */
-/*$fontEngDefault: "linotype-didot", serif !important;*/
 /* 화면분기 셀렉토 */
 .footer-wrapper {
   position: relative;
@@ -411,7 +408,6 @@ strong {
 
 /* 기본 컬러 */
 /* 마이홈페이지 컬러 */
-/*$fontEngDefault: "linotype-didot", serif !important;*/
 /* 화면분기 셀렉토 */
 /* 웹 접근성을 위한 화면 텍스트 숨김 */
 .offscreen, caption {
@@ -475,7 +471,6 @@ strong {
 
 /* 기본 컬러 */
 /* 마이홈페이지 컬러 */
-/*$fontEngDefault: "linotype-didot", serif !important;*/
 /* 화면분기 셀렉토 */
 .ico-to-top, .ico-arrow-orange, .ico-enter-arrow-white {
   display: inline-block;
@@ -508,7 +503,6 @@ strong {
 
 /* 기본 컬러 */
 /* 마이홈페이지 컬러 */
-/*$fontEngDefault: "linotype-didot", serif !important;*/
 /* 화면분기 셀렉토 */
 body {
   overflow-x: hidden;
@@ -1311,7 +1305,6 @@ img {
 
 /* 기본 컬러 */
 /* 마이홈페이지 컬러 */
-/*$fontEngDefault: "linotype-didot", serif !important;*/
 /* 화면분기 셀렉토 */
 .wrapper.my-home {
   background: #0E100F;
@@ -2182,6 +2175,11 @@ img {
   }
   .wrapper.my-home .intro-contact-wrap .contact-info-wrap .title-wrap .sub-title {
     font-size: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper.my-home {
+    overflow-x: hidden;
   }
 }
 
