@@ -983,8 +983,6 @@
         }
 
         .intro-project-wrap {
-            margin-top: 100px;
-
             .card-list {
                 margin-top: 100px;
             }
@@ -1010,7 +1008,10 @@
                 }
 
                 .card-list {
+                    margin-top: 73px;
+
                     .card-item {
+                        top: 73px;
                         padding: 25px;
                         min-height: auto;
                         grid-template-columns: 50% auto;

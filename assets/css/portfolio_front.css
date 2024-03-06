@@ -2060,9 +2060,6 @@ img {
     margin-top: 30px;
   }
 }
-.wrapper.my-home .intro-project-wrap {
-  margin-top: 100px;
-}
 .wrapper.my-home .intro-project-wrap .card-list {
   margin-top: 100px;
 }
@@ -2080,7 +2077,11 @@ img {
   .wrapper.my-home .intro-project-wrap .intro-word-wrap .video-wrap .word-box {
     align-self: flex-end;
   }
+  .wrapper.my-home .intro-project-wrap .card-list {
+    margin-top: 73px;
+  }
   .wrapper.my-home .intro-project-wrap .card-list .card-item {
+    top: 73px;
     padding: 25px;
     min-height: auto;
     grid-template-columns: 50% auto;
