@@ -1139,8 +1139,4 @@
             }
         }
     }
-
-    @include mixins.breakpoint_Size_MO {
-        overflow-x: hidden;
-    }
 }
