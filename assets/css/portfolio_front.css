@@ -524,64 +524,9 @@ body [show-mo] {
   }
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  vertical-align: top;
-}
-
-#cursor {
-  position: fixed;
-  z-index: 8888;
-  transform: translate(70%, 70%);
-  width: 45px;
-  height: 45px;
-  pointer-events: none;
-  background: url("../images/icon/ico_mouse_cursor.png") 0 0 no-repeat;
-  background-size: cover;
-  display: block;
-  /* 해상도 1400 */
-}
-@media (max-width: 1400px) {
-  #cursor {
-    display: none;
-  }
-}
-
-.btn-link {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9;
-}
-
-.auto-swiper-wrap {
-  font-size: 0;
-  overflow: hidden;
-}
-
-.wrapper .menu-section .bg-tab-wrap .tabs .tab-list {
-  display: flex;
-}
-.wrapper .menu-section .bg-tab-wrap .tab-content {
-  display: none;
-}
-
-.circle-text-box {
-  position: absolute;
-}
-.circle-text-box .btn-enter-link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .wrapper {
   background: #F7F6F3;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .wrapper.intro .content-box {
   position: relative;
@@ -691,6 +636,56 @@ img {
   .wrapper.intro .content-box .enter-choice-wrap .circle-text-box {
     display: none;
   }
+}
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.wrapper #cursor {
+  position: fixed;
+  z-index: 8888;
+  transform: translate(70%, 70%);
+  width: 45px;
+  height: 45px;
+  pointer-events: none;
+  background: url("../images/icon/ico_mouse_cursor.png") 0 0 no-repeat;
+  background-size: cover;
+  display: block;
+  /* 해상도 1400 */
+}
+@media (max-width: 1400px) {
+  .wrapper #cursor {
+    display: none;
+  }
+}
+.wrapper .btn-link {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+.wrapper .auto-swiper-wrap {
+  font-size: 0;
+  overflow: hidden;
+}
+.wrapper .menu-section .bg-tab-wrap .tabs .tab-list {
+  display: flex;
+}
+.wrapper .menu-section .bg-tab-wrap .tab-content {
+  display: none;
+}
+.wrapper .circle-text-box {
+  position: absolute;
+}
+.wrapper .circle-text-box .btn-enter-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrapper .flex-area {
   width: 50%;

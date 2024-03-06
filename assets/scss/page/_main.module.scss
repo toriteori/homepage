@@ -26,71 +26,10 @@ body {
     }
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-}
-
-#cursor {
-    position: fixed;
-    z-index: 8888;
-    transform: translate(70%, 70%);
-    width: 45px;
-    height: 45px;
-    pointer-events: none;
-    @include mixins.ratio_images('../images/icon/ico_mouse_cursor','png');
-    display: block;
-
-    /* 해상도 1400 */
-    @include mixins.breakpoint_Xl_Size {
-        display: none;
-    }
-}
-
-.btn-link {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 9;
-}
-
-.auto-swiper-wrap {
-    font-size: 0;
-    overflow: hidden;
-}
-
-// 탭
-
-%commTab {
-    .tabs {
-        .tab-list {
-            display: flex;
-        }
-    }
-
-    .tab-content {
-        display: none;
-    }
-}
-
-.circle-text-box {
-    position: absolute;
-
-    .btn-enter-link {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-
 .wrapper {
     background: variables.$colorGray01;
+    height: calc(var(--vh, 1vh) * 100);
+
     &.intro {
         .content-box {
             position: relative;
@@ -218,6 +157,68 @@ img {
                     }
                 }
             }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+    }
+
+    #cursor {
+        position: fixed;
+        z-index: 8888;
+        transform: translate(70%, 70%);
+        width: 45px;
+        height: 45px;
+        pointer-events: none;
+        @include mixins.ratio_images('../images/icon/ico_mouse_cursor','png');
+        display: block;
+
+        /* 해상도 1400 */
+        @include mixins.breakpoint_Xl_Size {
+            display: none;
+        }
+    }
+
+    .btn-link {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .auto-swiper-wrap {
+        font-size: 0;
+        overflow: hidden;
+    }
+
+    // 탭
+
+    %commTab {
+        .tabs {
+            .tab-list {
+                display: flex;
+            }
+        }
+
+        .tab-content {
+            display: none;
+        }
+    }
+
+    .circle-text-box {
+        position: absolute;
+
+        .btn-enter-link {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 
