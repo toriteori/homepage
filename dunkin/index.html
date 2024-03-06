@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>던킨</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.dunkindonuts.co.kr/assets/images/common/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="styleM.css"
+      media="all and (max-width:750px)"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="monthlyWrap">
+        <p class="monthlyDonuts">
+          <a href="#"
+            ><img
+              src="https://www.dunkindonuts.co.kr/upload/mbanner/1641603550.png"
+              alt="이달의 도넛"
+          /></a>
+        </p>
+        <p class="monthlyBtn">
+          <svg
+            id="angleDown"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <path
+              d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
+            />
+          </svg>
+          <span>monthly dunkin</span>
+        </p>
+      </div>
+
+      <div class="gnb1Wrap">
+        <div class="gnb1">
+          <p class="storeMobile">
+            <a href="#"> </a>
+          </p>
+          <ul class="etc">
+            <li><a href="#">창업문의</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+          <h2 class="logo">
+            <a href="#"
+              ><img
+                src="https://www.dunkindonuts.co.kr/assets/images/common/logo_dunkindonuts.png"
+                alt="던킨도너츠로고"
+            /></a>
+          </h2>
+          <ul class="miniMenu">
+            <li class="signIn"><a href="#">login</a></li>
+            <li class="signUp"><a href="#">join</a></li>
+            <li class="search"><a href="#">search</a></li>
+          </ul>
+          <p class="menuMobile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+              />
+            </svg>
+          </p>
+        </div>
+      </div>
+      <div class="gnb2Wrap">
+        <div class="gnb2">
+          <ul class="menu">
+            <li class="mainMenu">
+              <a href="#">dd commitment</a>
+              <div class="subWrap">
+                <ul class="subMenu subMenu1">
+                  <li class="sub1">
+                    <p class="subDepth"><a href="#">도넛 만드는 이야기</a></p>
+                  </li>
+                  <li class="sub1">
+                    <p class="subDepth"><a href="#">고객과의 약속</a></p>
+                  </li>
+                  <li class="sub1">
+                    <p class="subDepth"><a href="#">생산 센터 투어</a></p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainMenu">
+              <a href="#">brand</a>
+              <div class="subWrap">
+                <ul class="subMenu subMenu2">
+                  <li class="sub2">
+                    <p class="subDepth">
+                      <a href="#">브랜드 소개</a>
+                      <span
+                        ><a href="#">던킨도너츠에 대해서 알아보세요</a></span
+                      >
+                    </p>
+                  </li>
+                  <li class="sub2">
+                    <p class="subDepth">
+                      <a href="#">브랜드 소식</a>
+                      <span><a href="#">던킨 소식을 알려드립니다</a></span>
+                    </p>
+                  </li>
+                  <li class="sub2">
+                    <p class="subDepth">
+                      <a href="#">미디어 센터</a>
+                      <span
+                        ><a href="#">던킨의 보도자료들을 확인하세요</a></span
+                      >
+                    </p>
+                  </li>
+                  <li class="sub2">
+                    <p class="subDepth">
+                      <a href="#">광고</a>
+                      <span><a href="#">던킨의 광고를 구경해보세요</a></span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainMenu">
+              <a href="#">store</a>
+              <div class="subWrap">
+                <ul class="subMenu subMenu3">
+                  <li class="sub3">
+                    <p class="subDepth">
+                      <a href="#">오프라인 스토어</a>
+                      <span><a href="#">매장 찾기</a></span>
+                      <span><a href="#">신규 매장 안내</a></span>
+                      <span><a href="#">품질경영우수가맹점</a></span>
+                    </p>
+                  </li>
+                  <li class="sub3">
+                    <p class="subDepth">
+                      <a href="#">가맹점 개설 안내</a>
+                      <span><a href="#">대한민국 가맹시장</a></span>
+                      <span><a href="#">spc와 함께하는 던킨</a></span>
+                      <span><a href="#">25년간 사랑받는 던킨의 강점</a></span>
+                      <span><a href="#">새로운 출발 안내</a></span>
+                    </p>
+                  </li>
+                  <li class="sub3">
+                    <p class="subDepth"><a href="#">던킨 매장 찾기</a></p>
+                  </li>
+                  <li class="sub3">
+                    <p class="subDepth">
+                      <a href="#">단체 주문 & 케이터링 서비스</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainMenu">
+              <a href="#">menu</a>
+              <div class="subWrap">
+                <ul class="subMenu subMenu4">
+                  <li class="sub4">
+                    <p class="subDepth">
+                      <a href="#">도넛</a>
+                      <span><a href="#">이달의 도넛(DOM)</a></span>
+                      <span><a href="#">베이직</a></span>
+                      <span><a href="#">베이글</a></span>
+                      <span><a href="#">기타</a></span>
+                    </p>
+                  </li>
+                  <li class="sub4">
+                    <p class="subDepth">
+                      <a href="#">샌드위치</a>
+                      <span><a href="#">핫 샌드위치</a></span>
+                      <span><a href="#">DD앳홈</a></span>
+                    </p>
+                  </li>
+                  <li class="sub4">
+                    <p class="subDepth">
+                      <a href="#">커피</a>
+                      <span><a href="#">던카치노</a></span>
+                      <span><a href="#">던킨 에스프레소</a></span>
+                      <span><a href="#">브류드커피</a></span>
+                      <span><a href="#">코니 아일랜드</a></span>
+                      <span><a href="#">디카페인</a></span>
+                    </p>
+                  </li>
+                  <li class="sub4">
+                    <p class="subDepth">
+                      <a href="#">음료</a>
+                      <span><a href="#">버블/젤리</a></span>
+                      <span><a href="#">에이드/아이스티</a></span>
+                      <span><a href="#">쿨라타</a></span>
+                      <span><a href="#">초코/티/티라떼</a></span>
+                    </p>
+                  </li>
+                  <li class="sub4">
+                    <p class="subDepth">
+                      <a href="#">그 외</a>
+                      <span><a href="#">아이스 디저트</a></span>
+                      <span><a href="#">커피상품</a></span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainMenu">
+              <a href="#">event</a>
+              <div class="subWrap">
+                <ul class="subMenu subMenu5">
+                  <li class="sub5">
+                    <p class="subDepth"><a href="#">진행중인 이벤트</a></p>
+                  </li>
+                  <li class="sub5">
+                    <p class="subDepth"><a href="#">당첨자 발표</a></p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainMenu">
+              <a href="#">online store</a>
+              <div class="subWrap">
+                <ul class="subMenu subMenu6">
+                  <li class="sub6">
+                    <p class="subDepth"><a href="#">해피 오더 서비스</a></p>
+                  </li>
+                  <li class="sub6">
+                    <p class="subDepth"><a href="#">해피 e마켓</a></p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section1">
+        <div class="swiper mySwiper first">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"
+                ><img
+                  class="changeImg1"
+                  src="https://www.dunkindonuts.co.kr/upload/mbanner/1641602527.png"
+                  alt="슬라이드이미지1"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"
+                ><img
+                  class="changeImg2"
+                  src="https://www.dunkindonuts.co.kr/upload/mbanner/1641607818.png"
+                  alt="슬라이드이미지2"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"
+                ><img
+                  class="changeImg3"
+                  src="https://www.dunkindonuts.co.kr/upload/mbanner/1688722092.png"
+                  alt="슬라이드이미지3"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"
+                ><img
+                  class="changeImg4"
+                  src="https://www.dunkindonuts.co.kr/upload/mbanner/1677899702.jpg"
+                  alt="슬라이드이미지4"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"
+                ><img
+                  class="changeImg5"
+                  src="https://www.dunkindonuts.co.kr/upload/mbanner/1688722147.png"
+                  alt="슬라이드이미지5"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"
+                ><img
+                  class="changeImg6"
+                  src="https://www.dunkindonuts.co.kr/upload/mbanner/1575611684.png"
+                  alt="슬라이드이미지6"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"
+                ><img
+                  class="changeImg7"
+                  src="https://www.dunkindonuts.co.kr/upload/mbanner/1580951826.png"
+                  alt="슬라이드이미지7"
+              /></a>
+            </div>
+          </div>
+          <div class="swiper-button-next"><span>next</span></div>
+          <div class="swiper-button-prev"><span>prev</span></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="section2Inner">
+          <ul class="eventWrap1">
+            <li>
+              <h2 class="sectionLogo">
+                <img
+                  src="http://www.dunkindonuts.co.kr/assets/images/main/tit_new_event.png"
+                  alt="new&event 로고"
+                />
+              </h2>
+            </li>
+            <li>
+              <p class="alleventTxt">
+                <span>던킨의 다양한 혜택과</span>
+                <span>이벤트 그리고 신제품</span>
+                <span>sweet break, dunkin'donuts</span>
+              </p>
+              <p class="alleventBtn"><a href="#">전체 이벤트 보기</a></p>
+            </li>
+          </ul>
+          <ul class="eventWrap2">
+            <li class="event">
+              <div class="swiper mySwiper second">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1665224163.png"
+                        alt="던킨 11번가 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">dunkin x 11번가</span>
+                        <span class="preiod">2022-8-17 ~ 2022-8-22</span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit">11번가 십일절,던킨 20% off</span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="http://www.dunkindonuts.co.kr/upload/mbanner/1670462969.png"
+                        alt="던킨 교촌도넛팩 할인 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">dunkin x 교촌 도넛팩 할인</span>
+                        <span class="preiod">2022-8-13 ~ 2022-8-16</span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit"
+                          >던킨 교촌 도넛팩(4개입) 1,100원 OFF!</span
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1673050864.jpg"
+                        alt="킹사이즈 아메리카노 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">킹 사이즈 아이스 아메리카노</span>
+                        <span class="preiod">2022-7-5 ~ </span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit"
+                          >대용량으로 시원하게 즐기는 킹 사이즈
+                          아메리카노!</span
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1678161022.png"
+                        alt="핫 샌드위치 구매 시 음료 할인 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">핫 샌드위치 구매 시 음료 할인</span>
+                        <span class="preiod">2022-7-11 ~ </span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit"
+                          >핫 샌드위치 구매 시, 모든 제조 커피/음료 3,000원
+                          할인!</span
+                        >
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="event">
+              <div class="swiper mySwiper second">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1665224163(0)(1).png"
+                        alt="포켓몬 비치볼 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">dunkin x 포켓몬</span>
+                        <span class="preiod">2022-8-11 ~</span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit"
+                          >1.2만원 이상 구매 시, 포켓 비치볼 2,900원!
+                        </span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1641521857.jpg"
+                        alt="LGU+ 구독콕 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">lgu+ vip 구독콕</span>
+                        <span class="preiod">2022-7-1 ~ 2022-12-31</span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit"
+                          >lg u+ vip중, 던킨 구독콕 선택 대상에게
+                          카푸치노츄이스티 콤보 이용권 2매 증정</span
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1714693699.jpg"
+                        alt="던킨 x SK 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">dunkin x skt</span>
+                        <span class="preiod">2022-3-29 ~ 2023-1-31</span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit"
+                          >t멤버십 vip/gold 15%할인 적립, silver 5%
+                          할인/적립!</span
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/assets/images/main/img_evt_def.png"
+                        alt="비어있는 이벤트"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="event">
+              <div class="swiper mySwiper second">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1651968361.png"
+                        alt="포켓몬 시크릿 네임택 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">dunkin x 포켓몬</span>
+                        <span class="preiod">2022-8-5 ~ </span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit"
+                          >7천원 이상 구매 시, 시크릿네임택 2,500원!</span
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1699238884.jpg"
+                        alt="던킨 네이버페이 혜택 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">dunkin x 네이버 페이</span>
+                        <span class="preiod">2022-6-23 ~ 2022-9-22</span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit"
+                          >네이버페이로 현장 결제 시, 매일 받을 수 있는 던킨
+                          트리플 혜택!</span
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1641708827.jpg"
+                        alt="도넛프라이데이 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">donut fryday</span>
+                        <span class="preiod">2022-5-8 ~ </span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit">
+                          매주 금요일 페이머스 글레이즈드팩 6개입 6,900원,
+                          12개입 12,900원!
+                        </span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/assets/images/main/img_evt_def.png"
+                        alt="비어있는 이벤트"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="event">
+              <div class="swiper mySwiper second">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1641635187(0)(1).png"
+                        alt="던킨데이 이벤트 "
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">dunkin day</span>
+                        <span class="preiod">2022-8-1 ~ 2022-8-17</span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit">던킨데이 123챌린지</span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1691287676(0)(1).jpg"
+                        alt="던킨 포켓몬 해피오더 미니피크닉백 이벤트  "
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">dunkin x 포켓몬 </span>
+                        <span class="preiod">2022-6-20 ~ </span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit"
+                          >해피오더 배달 주문 시, 포켓몬 미니 피크닉백 1,000원
+                          OFF!</span
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/upload/mbanner/1651884814.jpg"
+                        alt="던킨 KT 이벤트"
+                      />
+                      <p class="eventDetail1">
+                        <span class="title">dunkin x kt</span>
+                        <span class="preiod">2022-4-1 ~ 2022-12-31</span>
+                      </p>
+                      <p class="eventDetail2">
+                        <span class="benefit"
+                          >kt vip 고객 생일달 해피버스데이도넛 + 아메리카노
+                          free</span
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="https://www.dunkindonuts.co.kr/assets/images/main/img_evt_def.png"
+                        alt="비어있는 이벤트"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-pagination"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section3">
+        <div class="section3Inner">
+          <p class="scrollTxt">
+            <span class="txtLeft">
+              <img
+                src="https://www.dunkindonuts.co.kr/assets/images/main/scroll_txt_1.png"
+                alt="잠깐의 여유와 달콤한 행복"
+              />
+            </span>
+            <span class="txtRight">
+              <img
+                src="https://www.dunkindonuts.co.kr/assets/images/main/scroll_txt_2.png"
+                alt="sweet break, dunkin' donuts"
+              />
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="section4">
+        <div class="section4Inner">
+          <ul class="menuWrap1">
+            <li>
+              <h2 class="sectionLogo">
+                <img
+                  src="https://www.dunkindonuts.co.kr/assets/images/main/tit_dunkin_menu.png"
+                  alt="menu 로고"
+                />
+              </h2>
+              <p class="allmenuTxt">
+                <span>던킨도너츠의 다양한 음료와 도넛들</span>
+                <span
+                  >Happiness, Fun, Refreshment, Energy and Break... If need be,
+                  just enjoy them! In busy daily lives, Dunkin' will be a sweet
+                  friend to you.</span
+                >
+              </p>
+            </li>
+          </ul>
+          <div class="menuWrap2">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide menuItem">
+                  <a href="#"></a>
+                </div>
+                <div class="swiper-slide menuItem" >
+                  <a href="#"></a>
+                </div>
+                <div class="swiper-slide menuItem" >
+                  <a href="#"> </a>
+                </div>
+                <div class="swiper-slide menuItem" >
+                  <a href="#"></a>
+                </div>
+                <div class="swiper-slide menuItem" >
+                  <a href="#"></a>
+                </div>
+              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section5">
+        <div class="section5Inner">
+          <div class="map">
+            <a href="#">
+              <h3>매장찾기</h3>
+              <p class="mapDetail">
+                달콤한 휴식을 즐길 수 있는 <br />
+                <span>던킨도너츠 매장</span>을 찾아보세요.
+              </p>
+            </a>
+          </div>
+          <div class="catering">
+            <a href="#">
+              <h3>단체주문 & 케이터링 서비스</h3>
+              <p class="cateringDetail">
+                특별한 날, 던킨과 함께 <br />
+                즐거움을 나누세요.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="section6">
+        <div class="section6Inner">
+          <ul class="snsWrap">
+            <li>
+              <h2 class="sectionLogo">
+                <img
+                  src="https://www.dunkindonuts.co.kr/assets/images/main/tit_dunkin_sns.png"
+                  alt="던킨도너츠 sns 로고"
+                />
+              </h2>
+            </li>
+            <li>
+              <p class="allsnsTxt">
+                <span>던킨도너츠와 함께하는 sns</span>
+              </p>
+            </li>
+            <li>
+              <p class="snsGo">
+                <span>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </span>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="rail">
+          <ul class="railImg">
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060455.jpg"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060725.png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060552.png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060725(0).png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060725(0)(1).png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060743.jpg"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060743.png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060611.png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060592(0).png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060611(0).png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060758.png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060791.png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060791(0).png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060640(0).png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060806.png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+            <li class="img">
+              <img
+                src="https://www.dunkindonuts.co.kr/upload/mbanner/1649060806(0).png"
+                alt="던킨 sns 홍보 이미지"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerInner">
+        <ul class="info">
+          <li>
+            <h2 class="logoFt">
+              <img
+                src="https://www.dunkindonuts.co.kr/assets/images/common/footer_logo.png"
+                alt="하단 던킨 로고"
+              />
+            </h2>
+          </li>
+          <li>
+            <p>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</p>
+            <p>
+              <span>사업자 등록번호:303-81-09535</span
+              ><span>비알코리아(주) 대표이사 도세호</span>
+            </p>
+            <p>
+              <span>TEL : 080-555-3131</span
+              ><span>개인정보관리책임자 : 김경우</span>
+            </p>
+            <p>COPYRIGHT Ⓒ 2016 BRKOREA COMPANY. ALL RIGHTS RESERVED.</p>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://www.dunkindonuts.co.kr/assets/images/common/footer_img_btn1.png"
+                alt="spc그룹 사회공헌활동 SPC행복한 이야기"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://www.dunkindonuts.co.kr/assets/images/common/footer_img_btn2_2.png"
+                alt="소비자중심경영 인증제도"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://www.dunkindonuts.co.kr/assets/images/common/footer_img_btn3.png"
+                alt="국가품질상 - KSA 한국표준협회"
+            /></a>
+          </li>
+          <li>
+            <label for="familySite">family site</label>
+            <select name="family" id="familySite">
+              <option value="spc그룹">spc그룹</option>
+              <option value="비알코리아">비알코리아</option>
+              <option value="베스킨라빈스">베스킨라빈스</option>
+              <option value="파리바게뜨">파리바게뜨</option>
+              <option value="샤니">샤니</option>
+              <option value="파스꾸찌">파스꾸찌</option>
+              <option value="해피포인트카드">해피포인트카드</option>
+              <option value="던킨 온라인 스쿨">던킨 온라인 스쿨</option>
+              <option value="던킨 아르바이트">던킨 아르바이트</option>
+            </select>
+          </li>
+        </ul>
+        <div class="siteMap">
+          <ul class="menuFt">
+            <li>
+              <a href="#">menu</a>
+              <a href="#">donut</a>
+              <a href="#">meal</a>
+              <a href="#">coffee</a>
+              <a href="#">beverage</a>
+              <a href="#">others</a>
+            </li>
+            <li>
+              <a href="#">event</a>
+              <a href="#">매장 프로모션</a>
+              <a href="#">온라인 이벤트</a>
+              <a href="#">당첨자 발표</a>
+            </li>
+            <li>
+              <a href="#">store</a>
+              <a href="#">오프라인 store</a>
+              <a href="#">온라인 store</a>
+              <a href="#">가맹점 개설 안내</a>
+            </li>
+            <li>
+              <a href="#">brand</a>
+              <a href="#">브랜드 소개</a>
+              <a href="#">뉴스 & 공지</a>
+              <a href="#">CF</a>
+            </li>
+            <li>
+              <a href="#">로그인</a>
+              <a href="#">회원가입</a>
+              <a href="#">고객센터</a>
+              <a href="#">가맹점 개설 안내</a>
+              <a href="#">영양정보</a>
+            </li>
+          </ul>
+          <div class="snsFt">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+          <ul class="policy">
+            <li><a href="#">윤리신고센터</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">영상정보처리기기운영관리방침</a></li>
+            <li><a href="#">안전보건경영방침</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+            <li><a href="#">거래희망회사 사전등록</a></li>
+            <li><a href="#">채용안내</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+    src="https://kit.fontawesome.com/7f1272f56d.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  </body>
+</html>

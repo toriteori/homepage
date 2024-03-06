@@ -1,0 +1,92 @@
+html,body {
+    font-size: 6px;
+}
+.whoTxt{
+    font-size: 2.2rem;
+}
+.inner{
+    padding: 0 0;
+}
+.slideWrap{
+    padding-bottom: 2rem;
+}
+.slideBtn{
+    top: calc(50% - 36rem);
+}
+.slideTxt{
+    flex-direction: column;
+    justify-content: start;
+}
+.nameTxt{
+    margin-bottom: 2rem;
+}
+.detailTxt{
+    width: 100%;
+}
+
+.ciMain{
+    display: flex;
+    flex-direction: column;
+}
+.ciMain .leftBox{
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #111;
+}
+.leftBox img{
+    top: 45%;
+    width: 45%;
+}
+.rightBox img{
+    top: 60%;
+}
+
+.ciMain .rightBox{
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+}
+
+.rbTop{
+    width: 50%;
+    height: 100%;
+    border-bottom: none;
+}
+.rbBottom{
+    width: 50%;
+    height: 100%;
+    padding-top: 0;
+}
+
+.rbTop img,
+.rbBottom img{
+    width: 30%;
+}
+.rbTop .ciLabel,
+.rbBottom .ciLabel{
+    margin-top: 2rem;
+
+}
+.ciFooter{
+    flex-direction: column;
+}
+.ciFooter .leftBox{
+    width: 100%;
+    height: 100%;
+}
+.ciFooter .rightBox{
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+}
+.primary{
+    justify-content: space-between;
+}
+.primary li{
+    width: 30%;
+    margin-right: 0;
+}
+
+.footerInner{
+    width: 100%;
+}
