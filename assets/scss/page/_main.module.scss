@@ -243,7 +243,7 @@ body {
                 .swiper-wrapper {
                     .swiper-slide {
                         .thumb-box {
-                            height: 100vh;
+                            height: calc(var(--vh, 1vh) * 100);
 
                             img {
                                 object-fit: cover;
@@ -289,7 +289,7 @@ body {
             @extend %commTab;
             position: relative;
             display: flex;
-            min-height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
 
             .flex-area {
                 .bg-change-box {
@@ -596,7 +596,7 @@ body {
             /* 해상도 1200 */
             @include mixins.breakpoint_Lg_Size {
                 flex-direction: column;
-                min-height: 100vh;
+                height: calc(var(--vh, 1vh) * 100);
 
                 .flex-area {
                     width: 100%;

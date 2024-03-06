@@ -701,7 +701,7 @@ body [show-mo] {
   height: 100vh;
 }
 .wrapper .visual-section .visual-swiper-wrap .fraction-swiper-wrap .swiper-wrapper .swiper-slide .thumb-box {
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .wrapper .visual-section .visual-swiper-wrap .fraction-swiper-wrap .swiper-wrapper .swiper-slide .thumb-box img {
   object-fit: cover;
@@ -729,7 +729,7 @@ body [show-mo] {
 .wrapper .menu-section .bg-tab-wrap {
   position: relative;
   display: flex;
-  min-height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   /* 해상도 1700 */
   /* 해상도 1600 */
   /* 해상도 1400 */
@@ -942,7 +942,7 @@ body [show-mo] {
 @media (max-width: 1200px) {
   .wrapper .menu-section .bg-tab-wrap {
     flex-direction: column;
-    min-height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .wrapper .menu-section .bg-tab-wrap .flex-area {
     width: 100%;
@@ -1339,7 +1339,7 @@ body [show-mo] {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   z-index: 9999;
   background: #0E100F;
 }
@@ -1723,7 +1723,7 @@ body [show-mo] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   padding: 30px 0;
 }
 .wrapper.my-home .intro-visual-wrap .intro-title-wrap {
@@ -2122,7 +2122,7 @@ body [show-mo] {
   display: flex;
   align-items: center;
   position: relative;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .wrapper.my-home .intro-contact-wrap .intro-text-wrap {
   position: absolute;
