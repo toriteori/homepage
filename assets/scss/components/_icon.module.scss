@@ -8,6 +8,13 @@
     overflow: hidden;
 }
 
+.ico-enter-arrow-white {
+    @extend %iconComm;
+    @include mixins.ratio_images('../images/icon/ico_enter_arrow_white', 'png', contain, center);
+    width: 100%;
+    height: 48px;
+}
+
 .ico-arrow-orange {
     @extend %iconComm;
     @include mixins.ratio_images('../images/icon/ico_arrow_orange', 'png', contain, center);

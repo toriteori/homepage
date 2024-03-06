@@ -477,11 +477,18 @@ strong {
 /* 마이홈페이지 컬러 */
 /*$fontEngDefault: "linotype-didot", serif !important;*/
 /* 화면분기 셀렉토 */
-.ico-to-top, .ico-arrow-orange {
+.ico-to-top, .ico-arrow-orange, .ico-enter-arrow-white {
   display: inline-block;
   position: relative;
   vertical-align: top;
   overflow: hidden;
+}
+
+.ico-enter-arrow-white {
+  background: url("../images/icon/ico_enter_arrow_white.png") center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 48px;
 }
 
 .ico-arrow-orange {
@@ -2175,6 +2182,11 @@ img {
   }
   .wrapper.my-home .intro-contact-wrap .contact-info-wrap .title-wrap .sub-title {
     font-size: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    overflow-x: hidden;
   }
 }
 
