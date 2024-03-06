@@ -220,6 +220,7 @@
             min-height: 500px;
             background-color: rgba(55, 55, 55, 0.4);
             backdrop-filter: blur(100px);
+            -webkit-backdrop-filter: blur(100px);
             border-radius: 15px;
 
             @include mixins.breakpoint_Size_MO {
