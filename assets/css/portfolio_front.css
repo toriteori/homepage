@@ -507,19 +507,19 @@ strong {
 body {
   overflow-x: hidden;
 }
-body [show-pc] {
+body [data-show-pc] {
   display: none;
 }
-body [show-mo] {
+body [data-show-mo] {
   display: none;
 }
 @media (min-width: 1025px) {
-  body [show-pc] {
+  body [data-show-pc] {
     display: block;
   }
 }
 @media (max-width: 1024px) {
-  body [show-mo] {
+  body [data-show-mo] {
     display: block;
   }
 }

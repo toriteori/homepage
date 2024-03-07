@@ -4,23 +4,23 @@
 body {
     overflow-x: hidden;
 
-    [show-pc] {
+    [data-show-pc] {
         display: none;
     }
 
-    [show-mo] {
+    [data-show-mo] {
         display: none;
     }
 
 
     @include mixins.breakpoint_Size_PC {
-        [show-pc] {
+        [data-show-pc] {
             display: block;
         }
     }
 
     @include mixins.breakpoint_Size_MO {
-        [show-mo] {
+        [data-show-mo] {
             display: block;
         }
     }
