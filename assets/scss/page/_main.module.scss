@@ -62,6 +62,7 @@ body {
     }
 
     .auto-swiper-wrap, .fraction-swiper-wrap {
+        position: relative;
         font-size: 0;
         overflow: hidden;
     }
