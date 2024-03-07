@@ -188,10 +188,13 @@ body {
 
                 .enter-choice-wrap {
                     width: 100vw;
-                    height: 49vh;
 
                     .circle-text-box {
                         display: none;
+                    }
+
+                    ~ .enter-choice-wrap {
+                        margin-top: 15px;
                     }
                 }
             }

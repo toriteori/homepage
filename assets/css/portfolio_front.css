@@ -666,10 +666,12 @@ body [show-mo] {
   }
   .wrapper.intro .content-box .enter-choice-wrap {
     width: 100vw;
-    height: 49vh;
   }
   .wrapper.intro .content-box .enter-choice-wrap .circle-text-box {
     display: none;
+  }
+  .wrapper.intro .content-box .enter-choice-wrap ~ .enter-choice-wrap {
+    margin-top: 15px;
   }
 }
 .wrapper .menu-section .bg-tab-wrap .tabs .tab-list {
