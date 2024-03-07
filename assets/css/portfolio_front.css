@@ -652,6 +652,17 @@ body [show-mo] {
   width: 69px;
   height: 46px;
 }
+.wrapper.intro .content-box .enter-choice-wrap.coming-soon:after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #0E100F;
+  opacity: 0.6;
+}
 @media (max-width: 1400px) {
   .wrapper.intro .content-box .enter-choice-wrap .circle-text-box {
     top: 75%;

@@ -73,7 +73,6 @@ body {
             display: flex;
             width: 100vw;
             height: calc(var(--vh, 1vh) * 100);
-
             overflow: hidden;
 
             .enter-choice-wrap {
@@ -168,6 +167,20 @@ body {
                     .btn-enter-link {
                         width: 69px;
                         height: 46px;
+                    }
+                }
+
+                &.coming-soon {
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        z-index: 999;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background: variables.$colorMyBlack;
+                        opacity: 0.6;
                     }
                 }
             }
