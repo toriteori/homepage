@@ -236,7 +236,7 @@ body {
 
     // 메인 비주얼 영역
     .visual-section {
-        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
 
         .visual-swiper-wrap {
             .fraction-swiper-wrap {

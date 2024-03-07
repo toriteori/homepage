@@ -698,7 +698,7 @@ body [show-mo] {
   }
 }
 .wrapper .visual-section {
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .wrapper .visual-section .visual-swiper-wrap .fraction-swiper-wrap .swiper-wrapper .swiper-slide .thumb-box {
   height: calc(var(--vh, 1vh) * 100);
