@@ -942,7 +942,7 @@ body [show-mo] {
 @media (max-width: 1200px) {
   .wrapper .menu-section .bg-tab-wrap {
     flex-direction: column;
-    height: calc(var(--vh, 1vh) * 100);
+    height: auto;
   }
   .wrapper .menu-section .bg-tab-wrap .flex-area {
     width: 100%;

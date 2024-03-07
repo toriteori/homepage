@@ -596,7 +596,7 @@ body {
             /* 해상도 1200 */
             @include mixins.breakpoint_Lg_Size {
                 flex-direction: column;
-                height: calc(var(--vh, 1vh) * 100);
+                height: auto;
 
                 .flex-area {
                     width: 100%;
